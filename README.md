@@ -1,13 +1,21 @@
-# ColorMyViews
+# Hello Shared Preferences
 
-Source for this codelab is [here](https://developer.android.com/codelabs/kotlin-android-training-constraint-layout#0)
+Source for this codelab is [here](https://developer.android.com/codelabs/android-training-shared-preferences?index=..%2F..%2Fandroid-training#0)
 
-Have a run at it with [this link](https://github.com/Crypt0Nyt/CodeLab/releases/download/Part-B/app-debug.apk)
+Have a run at it with [this link](https://github.com/Crypt0Nyt/CodeLab/releases/download/9.1/app-debug.apk)
 
 ## Preview of the app
 
-<img src="https://user-images.githubusercontent.com/59164922/118913158-90049200-b946-11eb-8344-3fee23554748.jpeg" title="" alt="WhatsApp Image 2021-05-20 at 8 33 32 AM (1)" width="274"><img src="https://user-images.githubusercontent.com/59164922/118913210-a3176200-b946-11eb-9ca2-d5fa6d029360.jpeg" title="" alt="WhatsApp Image 2021-05-20 at 8 33 32 AM" width="274">
+![Screenshot 117](https://user-images.githubusercontent.com/59164922/118916076-e4f6d700-b94b-11eb-8436-15778a61905a.png)
 
-<img title="" src="https://user-images.githubusercontent.com/59164922/118913217-a4e12580-b946-11eb-8949-9678a4c7b8eb.jpeg" alt="WhatsApp Image 2021-05-20 at 8 33 34 AM" width="275"><img title="" src="https://user-images.githubusercontent.com/59164922/118913219-a579bc00-b946-11eb-88c3-383b045d4363.jpeg" alt="WhatsApp Image 2021-05-20 at 8 33 33 AM" width="275">
+![Screenshot 112](https://user-images.githubusercontent.com/59164922/118916079-e58f6d80-b94b-11eb-97db-8c97cd20da1e.png)
 
-<img title="" src="https://user-images.githubusercontent.com/59164922/118913220-a6125280-b946-11eb-9eb4-96c161bd0f38.jpeg" alt="WhatsApp Image 2021-05-20 at 8 33 33 AM (1)" width="272"><img title="" src="https://user-images.githubusercontent.com/59164922/118913223-a6125280-b946-11eb-80ac-52f12d9e68e6.jpeg" alt="WhatsApp Image 2021-05-20 at 8 33 33 AM (2)" width="272">
+![Screenshot 113](https://user-images.githubusercontent.com/59164922/118916071-e32d1380-b94b-11eb-92b9-275714d55ab4.png)
+![Screenshot 114](https://user-images.githubusercontent.com/59164922/118916072-e45e4080-b94b-11eb-9999-964aaa0d2d11.png)
+![Screenshot 116](https://user-images.githubusercontent.com/59164922/118916073-e45e4080-b94b-11eb-8928-09e14561baac.png)
+
+![Screenshot 118](https://user-images.githubusercontent.com/59164922/118916078-e58f6d80-b94b-11eb-96d9-ae301ab05d7f.png)
+
+##### Then with the RESET button
+
+![Screenshot 117](https://user-images.githubusercontent.com/59164922/118916076-e4f6d700-b94b-11eb-8436-15778a61905a.png)
