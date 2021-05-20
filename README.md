@@ -1,7 +1,7 @@
 # CodeLab
 Source for this codelab is [here](https://developer.android.com/codelabs/constraint-layout#2)
 
-Have a run at it with [this link]()
+Have a run at it with [this link](https://github.com/Crypt0Nyt/CodeLab/releases/download/v0.1/app-debug.apk)
 
 ##Preview of the app
 
