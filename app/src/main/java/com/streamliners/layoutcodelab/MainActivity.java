@@ -1,71 +1,87 @@
 package com.streamliners.layoutcodelab;
 
+import android.graphics.Color;
 import android.os.Bundle;
-
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.streamliners.layoutcodelab.databinding.ActivityMainBinding;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        //Initialize binding
         b = ActivityMainBinding.inflate(getLayoutInflater());
+        super.onCreate(savedInstanceState);
         setContentView(b.getRoot());
-
-
+        setupEventHandlers();
     }
-/*
 
-
-    */
-/**
-     * Background color change on click event
-     *
-     * @param view To get which view is click
-     *//*
-
-    @SuppressLint({"ResourceType", "NonConstantResourceId"})
-    public void changeBackground(View view) {
-        //check which view is click
-        switch (view.getId()) {
-            //BoxOne is click
-            case R.id.box_one_text:
-                view.setBackgroundColor(Color.DKGRAY);
-                break;
-            //BoxTwo is click
-            case R.id.box_two_text:
-                view.setBackgroundColor(Color.GRAY);
-                break;
-            //BoxThree is click
-            case R.id.box_three_text:
-                //BoxFive is click
-            case R.id.box_five_text:
-                view.setBackgroundColor(Color.BLUE);
-                break;
-            //BoxFour is click
-            case R.id.box_four_text:
-                view.setBackgroundColor(Color.MAGENTA);
-                break;
-            //Red Button is click
-            case R.id.btn_red:
-                b.boxThreeText.setBackgroundColor(getResources().getColor(R.color.red));
-                break;
-            //Yellow Button is click
-            case R.id.btn_yellow:
-                b.boxFourText.setBackgroundColor(getResources().getColor(R.color.yellow));
-                break;
-            //Green Button is click
-            case R.id.btn_green:
-                b.boxFiveText.setBackgroundColor(getResources().getColor(R.color.green));
-                break;
-            //click on root
-            default:
-                view.setBackgroundColor(Color.LTGRAY);
-*/
-
+    /**
+     * To give color to the view accordingly
+     * @param view view to be colored
+     */
+    private void setColor(View view) {
+//      Checking ids and setting colors accordingly-------------------------------------------------
+        if (view.getId() == b.boxOneText.getId()) {
+            view.setBackgroundColor(Color.DKGRAY);
         }
+//        Coloring Box Three to BLue color
+//        Similarly for the following---------------------------------------------------
+
+        else if (view.getId() == b.boxTwoText.getId()) {
+            view.setBackgroundColor(Color.GRAY);
+        }
+
+        else if (view.getId() == b.boxThreeText.getId()) {
+            view.setBackgroundColor(Color.BLUE);
+        }
+
+        else if (view.getId() == b.boxFourText.getId()) {
+            view.setBackgroundColor(Color.MAGENTA);
+        }
+
+        else if (view.getId() == b.boxFiveText.getId()) {
+            view.setBackgroundColor(Color.BLUE);
+        }
+
+//        Checking ids for three buttons and coloring box three, four, five accordingly
+        else if (view.getId() == b.redButton.getId()) {
+            b.boxThreeText.setBackgroundColor(getResources().getColor(R.color.my_red));
+        }
+
+        else if (view.getId() == b.yellowButton.getId()) {
+            b.boxFourText.setBackgroundColor(getResources().getColor(R.color.my_yellow));
+        }
+
+        else if (view.getId() == b.greenButton.getId()) {
+            b.boxFiveText.setBackgroundColor(getResources().getColor(R.color.my_green));
+        }
+
+        else {
+            view.setBackgroundColor(Color.LTGRAY);
+        }
+    }
+
+    /**
+     *  Setting up event handlers for views
+     */
+    private void setupEventHandlers() {
+
+//      Making the list of all the clickable views
+        List<View> clickableViews = new ArrayList<>(
+                Arrays.asList(b.boxOneText, b.boxTwoText, b.boxThreeText,
+                        b.boxFourText, b.boxFiveText, b.constraintLayout,
+                        b.redButton, b.yellowButton, b.greenButton)
+        );
+
+//        Setting all click listeners for the views
+        for (View btn :
+                clickableViews) {
+            btn.setOnClickListener(v -> setColor(btn));
+        }
+    }
+}
